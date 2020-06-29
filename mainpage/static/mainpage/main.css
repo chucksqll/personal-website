@@ -1,0 +1,248 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background:  #22324e;
+  color: #333333;
+  margin-top: 0rem;
+}
+
+h1 {
+  font-size: 4rem; 
+  font-weight: 650;
+  color: #fff;
+}
+h2{
+  font-size: 2.5rem;
+}
+h3{
+  font-size: 3rem;
+}
+h4{
+  font-size: 3rem;
+  color: #DDDDDD;
+}
+
+ul {
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem; 
+}
+.mt-6 {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.under-line{
+  background: #888888;
+  width: inherit;
+  height: 1px;
+  margin: 30px auto;
+}
+#home {
+  background: url("/static/mainpage/images/background.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover; 
+  position: relative;
+  min-height: 100vh;
+  background-color: #22324e;
+  opacity: 1;
+}
+.color-overlay{
+  background: #22324e;
+  width: 100%;
+  min-height:100vh;
+  opacity: 0.8;
+  position: absolute;
+}
+
+.intro {
+  margin-top: 40vh;
+  width: 100%;
+  text-align: center;
+}
+.intro p{
+  color: #BBBBBB;
+}
+
+#about{
+  min-height: 100vh;
+  background:  #cbe1f1;
+}
+#about p{
+  color: #000000;
+  font-weight: 500;
+}
+
+#my-skills{
+  min-height: 100vh;
+  background: #cbe1f1;
+}
+#my-skills p{
+  font-size: 2rem;
+}
+
+#contact{
+  min-height: 85vh;
+  background: #22324e;
+}
+#contact p{
+  color: #DDDDDD;
+}
+#contact a{
+  color:#AAAAAA;
+}
+#contact a:hover{
+ color:#5bbbeb;
+}
+.contact-icon{
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+.contact-link{
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* Header */
+
+/* color of top belt */
+.bg-steel {
+  background-color:#22324e;
+}
+
+/* color of home aboutme, myskills, */
+.sticky-top .navbar-nav .nav-link {
+  color: #FFFFFF;
+  font-weight:600;
+}
+
+/* logo */
+.sticky-top .navbar-brand {
+  color: #FFFFFF;
+  font-weight:500; 
+}
+
+.sticky-top .navbar-brand .mr-4:hover {
+  color: #FFFFFF;
+}
+
+.sticky-top .navbar-nav .nav-link:hover {
+  color: #5bbbeb;
+}
+.sticky-top .navbar-nav .nav-link.active {
+  font-weight: 600;
+}
+
+/*-------------------------*/
+.scroll-down{
+  margin-top: 4vh;
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+.scroll-down span{
+  position: relative;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 25px;
+  color: #5bbbeb;
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;  
+}
+@-webkit-keyframes drop {
+  0%   { top:0px;  opacity: 1;}
+  30%  { top:10px; opacity: 1;}
+  100% { top:25px; opacity: 1;}
+}
+
+@keyframes drop {
+  0%   { top:0px;  opacity: 1;}
+  30%  { top:10px; opacity: 1;}
+  100% { top:25px; opacity: 1;}
+}
+
+/* icons */
+.col-xs-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 20%;
+    float: left;
+}
+
+div[class^="devicon"] {
+  display: block;
+  font-size: 80px;
+  margin: 2vh auto 2vh auto;
+  text-align: center;
+}
+
+div[class^="devicon"]:hover {
+  color: #999;
+}
+
+div[class^="devicon"] span{
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 16px;
+  display: block;
+}
+
+/*----------*/
+
+@media (max-width: 620px) {
+ div[class^="devicon"] {
+    font-size: 40px;
+  }
+
+  div[class^="devicon"] > span{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 620px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4{
+    font-size: 1.5rem;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+  .contact-icon{
+    font-size: 1.5rem;
+  }
+  .contact-link{
+    font-size: 0.8rem;
+  }
+  .scroll-down{
+  font-size: 2rem;
+  }
+}

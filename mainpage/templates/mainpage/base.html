@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'mainpage/main.css'%}">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Witold Banach</title>
+</head>
+<body>
+    
+    <section id="home">
+      <div class="color-overlay"></div>
+      <div class ="container">
+        <div class="row">
+          <div class="col-md-12 intro">
+              <h1>Witold Banach</h1>
+
+              <p>Junior Python Developer</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down">
+        <a href="#about">
+          <span class="fas fa-arrow-down"></span>
+        </a>
+      </div>
+
+    </section>
+
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{% url 'mainpage-home' %}">Witold Banach</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="#home">Home</a>
+              <a class="nav-item nav-link" href="#about">About me</a>
+              <a class="nav-item nav-link" href="#my-skills">My skills</a>
+              <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="about">
+      <div class ="container">
+        <div class="row">
+          <div class ="col-md-12 text-center">
+            <div class="mt-6">
+              <h2>About me</h2>
+              <div class="under-line"></div>
+            </div>
+          </div>
+          <div class="col-md-6" >
+            <p class="mb-3">
+              I'm a second year student at Gdansk University of Technology pursuing a diploma in mathematics aiming to get first
+              professional experience through internship or job in programming.
+            </p>
+
+            <p class="mb-3">
+              I'm a team player but if it is needed I can work on my own
+              I'm able to
+              quickly gain new skills and I am keen of getting knowledge in IT.
+            </p>
+            <p class="mb-3">
+              I would like to develop my skills as backend/full-stack python developer and improve knowledge of machine learning.
+              Although I'm not closed to other development pathways.
+
+            <p class="mb-3">
+              During the free time I like to play guitar, ride roller skates, and juggle.
+            </p>
+
+          </div>
+
+          <div class ="col-md-5">
+            <img class="img-fluid rounded-circle" src="{% static 'mainpage/images/mypic.jpg' %}" alt="Witold Banach">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="my-skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="mt-6">
+              <h3>My skills</h3>
+              <div class="under-line"></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row mx-2 my-2">
+          <div class="devicon-cplusplus-plain-wordmark colored col-xs-15"><span>C++</span></div>
+          <div  class="devicon-python-plain colored col-xs-15"><span>PYTHON</span></div>
+          <div  class="devicon-django-plain colored  col-xs-15"><span>DJANGO</span></div>
+        </div>
+
+        <div class="row mx-2 my-5">
+          <div  class="devicon-html5-plain colored  col-xs-15"><span>HTML</span></div>
+          <div  class="devicon-css3-plain colored  col-xs-15"><span>CSS</span></div>
+          <div  class="devicon-bootstrap-plain colored  col-xs-15"><span>BOOSTRAP</span></div>
+        </div>
+      </div>
+            
+        
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="mt-6">
+              <h4>Contact</h4>
+
+              <p>Please feel free to contact me</p>
+            </div>
+          </div>
+        </div>
+        <div class="under-line"></div>
+        <div class="row">
+          <div class="col-md-12 text-center my-3">
+            <a href="mailto:witoldbanach99@gmail.com">
+              <span  class="fas fa-at contact-icon"></span>
+              <span class="contact-link">witoldbanach99@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12 text-center my-3">
+            <a href="https://www.linkedin.com/in/witold-banach-9b685217b/" target="_blank">
+              <span  class="fab fa-linkedin-in contact-icon "></span>
+              <span class="contact-link">
+              https://www.linkedin.com/in/witold-banach-9b685217b/
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 text-center my-3">  
+            <a href="https://github.com/chucksqll" target="_blank">
+              <span  class="fab fa-github contact-icon"></span>
+              <span class="contact-link">
+              https://github.com/chucksqll
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="under-line"></div>
+      </div>
+    </section>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
