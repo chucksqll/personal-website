@@ -88,7 +88,12 @@
           </div>
 
           <div class ="col-md-5">
-            <img class="img-fluid rounded-circle" src="{% static 'mainpage/images/mypic.jpg' %}" alt="Witold Banach">
+            <img class="img-fluid rounded-circle" 
+            srcset="
+            {% static 'mainpage/images/mypic.jpg' %} 2400w,
+            {% static 'mainpage/images/mypic_medium.jpg' %} 1200w,
+            {% static 'mainpage/images/mypic_small.jpg' %} 400w"
+            src="{% static 'mainpage/images/mypic.jpg' %}" alt="Witold Banach">
           </div>
         </div>
       </div>

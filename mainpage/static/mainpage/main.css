@@ -243,6 +243,13 @@ div[class^="devicon"] span{
     font-size: 0.8rem;
   }
   .scroll-down{
-  font-size: 2rem;
+    font-size: 2rem;
+  }
+  #home{
+    background: url("/static/mainpage/images/background_medium.jpg");
+    background: url("/static/mainpage/images/background.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
