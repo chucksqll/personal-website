@@ -247,7 +247,6 @@ div[class^="devicon"] span{
   }
   #home{
     background: url("/static/mainpage/images/background_medium.jpg");
-    background: url("/static/mainpage/images/background.jpg");
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
